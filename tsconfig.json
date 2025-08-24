@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "sourceMap": true,
+    "target": "ESNext",
+    "types": ["jest", "node", "express"],
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true, // Enforce explicit types for untyped values
+    "noEmitOnError": true
+  },
+  "include": ["src/**/*", "tests/**/*"],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "transpileOnly": true,
+    "esm": false
+  }
+}
